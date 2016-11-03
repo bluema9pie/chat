@@ -71,7 +71,7 @@ $(function() {
 
   // Log a message
   function log (message, options) {
-    var $el = $('<li>').addClass('log').text(" &nbsp;&nbsp;"+message);
+    var $el = $('<li>').addClass('log').text(message);
     addMessageElement($el, options);
   }
 
@@ -86,10 +86,10 @@ $(function() {
     }
 
     var $usernameDiv = $('<span class="username"/>')
-      .text("&nbsp;" + data.username + " &nbsp;")
+      .text(&nbsp; + data.username + &nbsp; )
       .css('color', getUsernameColor(data.username));
     var $messageBodyDiv = $('<span class="messageBody">')
-      .text(data.message);
+      .text(&nbsp;&nbsp; + data.message);
 
     var typingClass = data.typing ? 'typing' : '';
     var $messageDiv = $('<li class="message"/>')
