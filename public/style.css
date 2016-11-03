@@ -41,7 +41,7 @@ body {
 }
 
 .username {
-  color: #FFFFFF;
+  background-color: 00FF00;
   float: left;
   overflow: hidden;
   padding-right: 10px;
