@@ -27,9 +27,9 @@ $(function() {
   function addParticipantsMessage (data) {
     var message = '';
     if (data.numUsers === 1) {
-      message +=  data.numUsers + " 人在線上";
+      message += "現在有 " + data.numUsers + " 人在線上";
       log(message);
-      log("一個人聊天好寂寞，快邀請朋友進來");
+      //log("一個人聊天好寂寞，快邀請朋友進來");
     } else {
       message += "現在有 " + data.numUsers + " 人在線上";
       log(message);    }
@@ -227,7 +227,7 @@ $(function() {
   socket.on('login', function (data) {
     connected = true;
     // Display the welcome message
-    var message = "=== 在地逢甲聊天室 !! ===";
+    var message = "=== 在地逢甲聊天室 ===";
     log(message, {
       prepend: true
     });
