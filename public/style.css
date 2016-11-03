@@ -42,7 +42,7 @@ body {
 
 .username {
   border-radius:3px;
-  background-color: #FFFFFF;
+  color: #FFFFFF;
   float: left;
   overflow: hidden;
   padding-right: 10px;
