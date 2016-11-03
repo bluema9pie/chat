@@ -43,7 +43,6 @@ body {
 .username {
   color: #FFFFFF;
   float: left;
-  font-weight: 700;
   overflow: hidden;
   padding-right: 10px;
   text-align: right;
