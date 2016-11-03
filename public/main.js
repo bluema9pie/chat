@@ -31,9 +31,9 @@ $(function() {
     if (data.numUsers === 1) {
       message +=  data.numUsers + " people  online";
       log(message);
-      log("一個人聊天好寂寞，快邀請朋友進來 http://chat.fcu.today/");
+      log("一個人聊天好寂寞，快邀請朋友進來");
     } else {
-      message += "there are " + data.numUsers + " people online";
+      message += "there are " + data.numUsers + " 在線上";
       log(message);
     }
   }
@@ -230,7 +230,7 @@ $(function() {
   socket.on('login', function (data) {
     connected = true;
     // Display the welcome message
-    var message = "=== Welcom to Chat Demo !! ===";
+    var message = "=== 在地逢甲聊天室 !! ===";
     log(message, {
       prepend: true
     });
