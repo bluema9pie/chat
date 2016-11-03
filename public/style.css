@@ -11,29 +11,34 @@ body {
 
 .messages {
   font-size: 120%;
+  color: #FFFFFF;
 }
 
 .inputMessage {
   font-size: 100%;
+  color: #FFFFFF;
 }
 
 .log {
-  color: gray;
+  
   font-size: 90%;
   margin: 5px;
   text-align: center;
+  color: #FFFFFF;
 }
 
 .messages {
   list-style: none;
+  color: #FFFFFF;
   /*padding: 10px 20px 10px 20px;*/
 }
 
 .message.typing .messageBody {
-  color: gray;
+  color: #FFFFFF;
 }
 
 .username {
+  color: #FFFFFF;
   float: left;
   font-weight: 700;
   overflow: hidden;
