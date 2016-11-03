@@ -1,10 +1,9 @@
 $(function() {
   var FADE_TIME = 150; // ms
   var TYPING_TIMER_LENGTH = 400; // ms
+  var 
   var COLORS = [
-    '#e21400', '#91580f', '#f8a700', '#f78b00',
-    '#58dc00', '#287b00', '#a8f07a', '#4ae8c4',
-    '#3b88eb', '#3824aa', '#a700ff', '#d300e7'
+    '#FFFFFF'
   ];
 
   // Initialize varibles
@@ -29,13 +28,12 @@ $(function() {
   function addParticipantsMessage (data) {
     var message = '';
     if (data.numUsers === 1) {
-      message +=  data.numUsers + " 在線上";
+      message +=  data.numUsers + " 人在線上";
       log(message);
       log("一個人聊天好寂寞，快邀請朋友進來");
     } else {
-      message += "there are " + data.numUsers + " 在線上";
-      log(message);
-    }
+      message += "現在有 " + data.numUsers + " 人在線上";
+      log(message);    }
   }
 
   // Sets the client's username
@@ -244,13 +242,13 @@ $(function() {
 
   // Whenever the server emits 'user joined', log it in the chat body
   socket.on('user joined', function (data) {
-    log(data.username + ' join');
+    log(data.username + ' 加入聊天室');
     addParticipantsMessage(data);
   });
 
   // Whenever the server emits 'user left', log it in the chat body
   socket.on('user left', function (data) {
-    log(data.username + ' leave');
+    log(data.username + ' 離開聊天室');
     addParticipantsMessage(data);
     removeChatTyping(data);
   });
