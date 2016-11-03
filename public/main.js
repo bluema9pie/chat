@@ -29,7 +29,7 @@ $(function() {
   function addParticipantsMessage (data) {
     var message = '';
     if (data.numUsers === 1) {
-      message +=  data.numUsers + " people  online";
+      message +=  data.numUsers + " 在線上";
       log(message);
       log("一個人聊天好寂寞，快邀請朋友進來");
     } else {
